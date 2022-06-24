@@ -10,7 +10,7 @@ Note: The test is located in the Homepage folder
 - `yarn install` to install packages
 - `yarn start` to run app locally. Open [http://localhost:3000](http://localhost:3000) to view in the browser
 
-### Impovements
+## Impovements
 
 - Add more information pages (e.g. launches, history, etc.)
 - Sticky header on missions page
@@ -22,3 +22,19 @@ Note: The test is located in the Homepage folder
 - Autocomplete for manufacturer filter is not as intuitive as I wanted for expecting more results the more filters you add. Probably switch to checkmark filter or some other display type to make it easier to tell that adding more filters means more options, or limiting it and using a Select component instead to only filter by one manufacturer at a time
 - As the list gets longer, some sort of pagination so that the app won't have to load 1000 results which will definitely cause longer loading times
 - Expandable sections that only render if they are expanded if I chose to display all the data instead of picking and choosing which data I thought would be the most relevant
+
+### Home Page
+
+![homepage](./src/imgs/spacex_homepage.png)
+
+### Missions Page
+
+![missionspage](./src/imgs/missionspage.png)
+
+### Filtering by Manufacturer
+
+![filter_by_manufacturer](./src/imgs/filter_by_manufacturer.png)
+
+### Sorting Alphabetically by Name
+
+![sort_alphabetical](./src/imgs/sort_alphabetical.png)

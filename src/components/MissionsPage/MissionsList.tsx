@@ -77,11 +77,15 @@ const MissionsList = () => {
         )
       : [...data.missions];
 
-  //will have to update this into maybe a function once more sort options are available
+  //will have to update this into maybe a function or switch statement once more sort options are available
   const sortedAndFilteredMissions =
-    selectedSort === "Alphabetical"
+    selectedSort === "AZ"
       ? filteredMissions.sort((miss1, miss2) =>
           miss1.name.localeCompare(miss2.name)
+        )
+      : selectedSort === "ZA"
+      ? filteredMissions.sort((miss1, miss2) =>
+          miss2.name.localeCompare(miss1.name)
         )
       : filteredMissions;
 
@@ -150,7 +154,8 @@ const MissionsList = () => {
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem value="Alphabetical">Alphabetical by Name</MenuItem>
+                <MenuItem value="AZ">Name A-Z</MenuItem>
+                <MenuItem value="ZA">Name Z-A </MenuItem>
               </Select>
             </FormControl>
           </Box>
