@@ -21,7 +21,7 @@ Note: The test is located in the Homepage folder
 - Better logic for filters and sorts -> maybe abstracting that logic out to a higher layer that passes in filtered & sorted list to the MissionsList component
 - Autocomplete for manufacturer filter is not as intuitive as I wanted for expecting more results the more filters you add. Probably switch to checkmark filter or some other display type to make it easier to tell that adding more filters means more options, or limiting it and using a Select component instead to only filter by one manufacturer at a time
 - As the list gets longer, some sort of pagination so that the app won't have to load 1000 results which will definitely cause longer loading times
-- Expandable sections that only render if they are expanded if I chose to display all the data instead of picking and choosing which data I thought would be the most relevant. Currently doesn't really matter, but ff the data objects became a lot bigger doing that would help with page loading.
+- Expandable sections that only render if they are expanded if I chose to display all the data instead of picking and choosing which data I thought would be the most relevant. Currently doesn't really matter, but if the data objects became a lot bigger doing that would help with page loading.
 
 ### Home Page
 
